@@ -3,10 +3,32 @@ import { Offcanvas } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import CartItem from "./CartItem";
 import formatCurrency from "./formatcurrency";
-import storeItem from "../data/storeItems.json";
 
 const ShoppingCart = ({ isOpen }) => {
   const { cartItems, closeCart } = useShoppingCart();
+
+  const storeItem = [
+    {
+      id: 1,
+      name: "Book",
+      price: 10,
+    },
+    {
+      id: 2,
+      name: "Computer",
+      price: 400,
+    },
+    {
+      id: 3,
+      name: "Banana",
+      price: 1.5,
+    },
+    {
+      id: 4,
+      name: "Car",
+      price: 10000,
+    },
+  ];
   return (
     <Offcanvas show={isOpen} onHide={closeCart} placement="end">
       <Offcanvas.Header closeButton>

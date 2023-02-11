@@ -1,10 +1,40 @@
 import React from "react";
 import { Button, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../context/ShoppingCartContext";
-import storeItems from "../data/storeItems.json";
 import formatCurrency from "./formatcurrency";
+import IMG1 from '../images/book.jpg'
+import IMG2 from '../images/computer.jpg'
+import IMG3 from '../images/banana.jpg'
+import IMG4 from '../images/car.jpg'
 
 const CartItem = ({ id, quantity }) => {
+
+  const storeItems = [
+    {
+      id: 1,
+      name: "Book",
+      price: 10,
+      imgUrl: IMG1
+    },
+    {
+      id: 2,
+      name: "Computer",
+      price: 400,
+      imgUrl: IMG2
+    },
+    {
+      id: 3,
+      name: "Banana",
+      price: 1.5,
+      imgUrl: IMG3
+    },
+    {
+      id: 4,
+      name: "Car",
+      price: 10000,
+      imgUrl: IMG4
+    }
+  ]
   const { removeItemFromCart } = useShoppingCart();
   const item = storeItems.find((item) => item.id === id);
   if (item == null) {
@@ -18,7 +48,7 @@ const CartItem = ({ id, quantity }) => {
     >
       <img
         src={item.imgUrl}
-        alt="cart-img"
+        alt="Product image"
         style={{ width: "125px", height: "75px", objectFit: "cover" }}
       />
       <div className="me-auto">
