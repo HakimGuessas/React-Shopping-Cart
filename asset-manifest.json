@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "./http://HakimGuessas.github.io/React-Shopping-Cart/static/css/main.756af292.css",
-    "main.js": "./http://HakimGuessas.github.io/React-Shopping-Cart/static/js/main.d4349af2.js",
-    "index.html": "./http://HakimGuessas.github.io/React-Shopping-Cart/index.html",
-    "main.756af292.css.map": "./http://HakimGuessas.github.io/React-Shopping-Cart/static/css/main.756af292.css.map",
-    "main.d4349af2.js.map": "./http://HakimGuessas.github.io/React-Shopping-Cart/static/js/main.d4349af2.js.map"
+    "main.css": "/React-Shopping-Cart/static/css/main.756af292.css",
+    "main.js": "/React-Shopping-Cart/static/js/main.8136ffee.js",
+    "index.html": "/React-Shopping-Cart/index.html",
+    "main.756af292.css.map": "/React-Shopping-Cart/static/css/main.756af292.css.map",
+    "main.8136ffee.js.map": "/React-Shopping-Cart/static/js/main.8136ffee.js.map"
   },
   "entrypoints": [
     "static/css/main.756af292.css",
-    "static/js/main.d4349af2.js"
+    "static/js/main.8136ffee.js"
   ]
 }
